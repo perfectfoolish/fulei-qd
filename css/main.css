@@ -7,6 +7,9 @@ ul {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 .clearfix:before,
 .clearfix:after {
   content: "   ";
@@ -50,7 +53,9 @@ header {
     padding: 0.8em;
     margin: 1.5em auto;
     font-size: .8em;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    background-color: #0097A7;
+    border-radius: 1em; }
 
 .books {
   height: 9em; }
