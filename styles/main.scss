@@ -39,7 +39,19 @@ header {
   }
 }
 .books {
-  height: 9em;
+  .book {
+    // border: 1px solid red;
+    @media ( min-width: 600px ) {
+      width: 33.3333%;
+      float: left;
+    }
+    padding: 2em;
+    .cover {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
 }
 footer {
   height: 5em;
