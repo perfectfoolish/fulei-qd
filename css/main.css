@@ -33,6 +33,9 @@ header {
   .action .action-button {
     margin: 0 auto;
     margin-top: 7em; }
+    @media (min-width: 600px) {
+      .action .action-button {
+        background-color: lightseagreen; } }
 
 .haoduo {
   background-color: #00BCD4; }
