@@ -10,7 +10,8 @@ body {
 img {
   max-width: 100%;
   display: block;
-  height: auto; }
+  height: auto;
+  border: none; }
 
 ul {
   margin: 0;
@@ -28,44 +29,37 @@ a {
   clear: both; }
 
 header {
-  border: 1px solid red;
-  background-color: #00BCD4; }
-  header .header-container {
-    border: 1px solid black;
-    position: relative; }
-    header .header-container .wrap-menu {
-      border: 1px solid yellow;
-      background-color: #0097A7;
-      padding-top: 20px !important;
-      padding-bottom: 15px !important;
-      width: 100%;
-      position: absolute; }
-      header .header-container .wrap-menu .container {
-        border: 1px solid blue;
-        padding-left: 15px;
-        padding-right: 15px; }
-        header .header-container .wrap-menu .container .row .col-md-6 {
-          padding-left: 15px;
-          padding-right: 15px; }
+  background-color: #30a7b7; }
+  header .header-container .wrap-menu .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+    header .header-container .wrap-menu .container .row .col-md-6 {
+      padding-right: 15px;
+      padding-left: 15px; }
+      header .header-container .wrap-menu .container .row .col-md-6 #logo {
+        display: block;
+        float: left; }
+        @media (max-width: 768px) {
           header .header-container .wrap-menu .container .row .col-md-6 #logo {
-            display: block;
-            float: left; }
-            @media (max-width: 768px) {
-              header .header-container .wrap-menu .container .row .col-md-6 #logo {
-                height: 30px;
-                top: 1px; } }
-            header .header-container .wrap-menu .container .row .col-md-6 #logo img {
-              max-height: 100%;
-              border: 1px solid white; }
-          header .header-container .wrap-menu .container .row .col-md-6 .btn-white {
-            border: solid 2px #fff;
-            padding-top: 4px;
-            padding-bottom: 2px;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-radius: 18px;
-            font-size: 12px;
-            line-height: 20px;
-            font-weight: 500;
-            color: #fff;
-            text-transform: uppercase; }
+            height: 30px;
+            top: 1px; } }
+        header .header-container .wrap-menu .container .row .col-md-6 #logo img {
+          max-height: 100%; }
+      @media (max-width: 768px) {
+        header .header-container .wrap-menu .container .row .col-md-6 .btn {
+          font-size: 12px;
+          padding-top: 4px;
+          padding-bottom: 2px;
+          padding-left: 15px;
+          padding-right: 15px; } }
+      header .header-container .wrap-menu .container .row .col-md-6 .btn-white {
+        border: solid 2px #fff;
+        border-radius: 18px;
+        float: right;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: center; }
