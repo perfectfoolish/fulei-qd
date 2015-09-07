@@ -1,59 +1,62 @@
 @import 'common';
 header {
-  height: 5em;
+  border: 1px solid red;
   background-color: $primary-color;
-}
-.action {
-  height: 13em;
-  .action-button {
-    margin: 0 auto;
-    margin-top: 7em;
-    @media ( min-width: 600px ) {
-      background-color: lightseagreen;
+
+  .header-container {
+    border: 1px solid black;
+    position: relative;
+
+    .wrap-menu {
+      border: 1px solid yellow;
+      background-color: $primary-color-dark;
+      padding-top: 20px !important;
+      padding-bottom: 15px !important;
+      width: 100%;
+      position: absolute;
+
+      .container {
+        border: 1px solid blue;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .row {
+
+          .col-md-6 {
+
+            padding-left: 15px;
+            padding-right: 15px;
+            #logo {
+              display: block;
+              float: left;
+
+              @media ( max-width: 768px ) {
+                height: 30px;
+                top: 1px;
+              }
+              img {
+                max-height: 100%;
+                border: 1px solid white;
+
+              }
+            }
+
+            .btn-white {
+              border: solid 2px #fff;
+              padding-top: 4px;
+              padding-bottom: 2px;
+              padding-left: 15px;
+              padding-right: 15px;
+              border-radius: 18px;
+              font-size: 12px;
+              line-height: 20px;
+              font-weight: 500;
+              color: #fff;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
     }
   }
-}
-.haoduo {
-  background-color: $primary-color;
-  h2 {
-    margin-top: 2em;
-    color: $primary-color-text;
-    text-align: center;
-    font-weight: normal;
-  }
-  p {
-    text-align: center;
-    color: $primary-color-text;
-    opacity: .9;
-  }
-  a.visit-haoduo {
-    display: block;
-    width: 6em;
-    text-align: center;
-    padding: 0.8em;
-    margin: 1.5em auto;
-    font-size: .8em;
-    color: $primary-color-text;
-    background-color: $primary-color-dark;
-    border-radius: 1em;
-  }
-}
-.books {
-  .book {
-    // border: 1px solid red;
-    @media ( min-width: 600px ) {
-      width: 33.3333%;
-      float: left;
-    }
-    padding: 2em;
-    .cover {
-      display: block;
-      margin: 0 auto;
-      width: 70%;
-    }
-  }
-}
-footer {
-  height: 5em;
-  background-color: #212121;
 }
