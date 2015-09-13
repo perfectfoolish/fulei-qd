@@ -8,23 +8,30 @@ a {
 h3 {
   margin: 0; }
 
+html {
+  font-size: 14px; }
+
 body {
   display: block;
   background: #f2f2f2;
   margin: 0;
   font-family: sans-serif;
-  color: #777;
-  font-size: 14px; }
+  color: #777; }
 
 .header {
+  min-width: 350px;
   background: #3c3c3c;
   line-height: 1.5;
   margin-bottom: 70px; }
 
 .container {
-  width: 960px;
+  width: 90%;
   margin: 0 auto;
   position: relative; }
+
+@media (min-width: 960px) {
+  .container {
+    width: 60%; } }
 
 .header .name {
   color: white;
@@ -56,11 +63,15 @@ body {
 .card {
   position: relative;
   background: white;
-  width: 960px;
+  width: 90%;
   margin: 40px auto;
   border-radius: 5px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   padding-left: 160px; }
+
+@media (min-width: 960px) {
+  .card {
+    width: 960px; } }
 
 .card h3 {
   font-size: 1.3em;
@@ -100,6 +111,7 @@ body {
   background: #41a9cc url("/images/play_list_big.png") no-repeat 62px 50%; }
 
 .footer {
+  min-width: 350px;
   height: 440px;
   background: #444;
   margin-top: 60px; }
